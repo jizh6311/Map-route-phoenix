@@ -13,6 +13,7 @@ defmodule MapRoutePhoenix.Application do
       # Start the endpoint when the application starts
       supervisor(MapRoutePhoenixWeb.Endpoint, []),
       # Start your own worker by calling: MapRoutePhoenix.Worker.start_link(arg1, arg2, arg3)
+      supervisor(MapRoutePhoenix.Presence, []),
       # worker(MapRoutePhoenix.Worker, [arg1, arg2, arg3]),
     ]
 
