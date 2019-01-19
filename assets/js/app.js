@@ -58,7 +58,7 @@ let renderMessage = (message) => {
   let messageElement = document.createElement("li")
   messageElement.innerHTML = `
     <b>${message.user}</b>
-    <i>${formatedTimestamp(message.timestamp)} from ${message.location}</i>
+    <i>${formatedTimestamp(message.timestamp)}</i>
     <p>${message.body}</p>
     `
 

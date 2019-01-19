@@ -19,7 +19,6 @@ defmodule MapRoutePhoenixWeb.MapChannel do
     broadcast! socket, "message:new", %{
       user: socket.assigns.user,
       body: message,
-      location: GeoIP.lookup("218.107.132.66"),
       timestamp: :os.system_time(:milli_seconds)
     }
     {:noreply, socket}
