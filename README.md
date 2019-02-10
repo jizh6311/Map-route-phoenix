@@ -1,5 +1,10 @@
 # MapRoutePhoenix
 
+To start your local Postgres server on Mac:
+  * Start: `brew services start postgresql`
+  * Stop: `brew services stop postgresql`
+  * Update postgresql data if system or postgres has upgraded: `brew postgresql-upgrade-database`
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
@@ -16,5 +21,6 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Official website: http://www.phoenixframework.org/
   * Guides: http://phoenixframework.org/docs/overview
   * Docs: https://hexdocs.pm/phoenix
+  * PostgreSQL: https://www.postgresql.org/
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
